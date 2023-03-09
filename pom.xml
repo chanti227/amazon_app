@@ -19,6 +19,20 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+    <distributionManagement>  
+	  <repository>
+		  <id>nexus</id>
+		  <name>Ashok IT Releases Nexus Repo</name>
+		  <url>http://3.108.219.184:8081/repository/chanti_release_repository/</url>
+	  </repository>
+	
+	  <snapshotRepository>
+		  <id>nexus</id>
+		  <name>Ashok IT Snapshots Nexus Repo</name>
+		  <url>http://3.108.219.184:8081/repository/chanti_snapshot_repository/</url>
+	  </snapshotRepository>	
+    </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -26,6 +40,8 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+
   </dependencies>
 
   <build>
